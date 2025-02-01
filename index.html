@@ -35,13 +35,13 @@ font-family: "Poppins", serif;}
 
 
 </head>
-<body class="poppins-thin w-full max-w-[1250px] ">
+<body class="poppins-thin w-full max-w-[1440px] ">
 
 
     
 
 <!-- header  -->
-    <header class=" mt-5 bg-gradient-to-t from-orange-50 ">
+<header class=" mt-5 bg-gradient-to-t from-orange-50 pb-3 lg:pb-6 ">
 
 <!-- nav bar  -->
 <nav class=" mx-[5%] lg:mx-[10%] grid grid-cols-2 lg:grid-cols-3 ">
@@ -152,25 +152,58 @@ font-family: "Poppins", serif;}
 
 
 
+
+
+
+
+
+
 <!-- Hero section  -->
-<section class="mx-[5%] lg:mx-[10%] mt-24  ">
+<section class=" lg:mt-24 mt-10   ">
 
 <!-- one -->
-<div class="flex flex-col justify-center gap-5">
+<div class="flex flex-col justify-center gap-5 mx-[5%] lg:mx-[10%]">
 
   <h1 class="font-bold text-xl md:text-4xl text-center"> 
     Freshness <span class="text-green "> You Can <br>
       Count </span> On, Prices You’ll Love!
   </h1>
   <p class="flex items-center text-center justify-center">
-    Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!
+    Shop your daily essentials at unbeatable prices. <br class=" hidden sm:block"> From fresh produce to pantry   staples, we’ve got you covered every day!
   </p>
 </div>
 
 <!-- two  -->
-<div class="flex justify-center mx-auto">
-<img class="flex justify-center mx-auto" src="images/hero-vegetables.png" alt="">
+<div class="flex justify-center mx-0 lg:mx-[10%]">
+  <img class="image-loop flex justify-center mx-0 lg:mx-[10%] shad" src="images/hero-vegetables.png" alt="">
 </div>
+
+<!-- animation  -->
+<style>
+
+  .image-loop {
+    animation: moveLeftRightZoom 6s ease-in-out infinite;
+  }
+
+  @keyframes moveLeftRightZoom {
+    0% {
+      transform: translateX(0) scale(1); 
+    }
+    25% {
+      transform: translateX(20px) scale(1.05); 
+    }
+    50% {
+      transform: translateX(0) scale(1); 
+    }
+    75% {
+      transform: translateX(-20px) scale(1.05); 
+    }
+    100% {
+      transform: translateX(0) scale(1); 
+    }
+  }
+</style>
+<!-- animation  -->
 
 </section>
 
@@ -181,9 +214,9 @@ font-family: "Poppins", serif;}
 <main >
 
   <!-- Services part  -->
-  <section>
+<section>
 
- <div class="mx-[5%] lg:mx-[10%] mt-24 flex flex-col gap-10">
+ <div class="mx-[5%] lg:mx-[10%] mt-10 lg:mt-24 flex flex-col gap-10">
 <!-- one  -->
  <div class=" font-bold text-md lg:text-2xl text-green">
   <h2>Services</h2>
@@ -249,11 +282,11 @@ font-family: "Poppins", serif;}
 
 <!-- Popular Products part  -->
 
-<section class=" mt-24 flex flex-col gap-10 bg-orange-50 ">
+<section class=" lg:mt-24 mt-10 flex flex-col gap-10 bg-orange-50 ">
 
   <!-- one  -->
   
-    <div class=" font-bold text-md lg:text-2xl text-green mx-[5%] lg:mx-[10%] mt-24 ">
+    <div class=" font-bold text-md lg:text-2xl text-green mx-[5%] lg:mx-[10%] mt-10 lg:mt-24 ">
   <h2>
     Popular Products
   </h2>
@@ -295,11 +328,11 @@ font-family: "Poppins", serif;}
   <div class="my-auto">
   <div class="flex gap-2 my-auto">
     <div><i class="fa-solid fa-star text-orange-400"></i></div>
-    <div><h2 class="font-bold">4.5</h2></div>
+    <div class="my-auto"><h2 class="font-semibold text-[10px] lg:text-[13px] my-auto">4.5</h2></div>
   </div>
   
   <div>
-    <h1 class="font-bold lg:font-semibold ">Onion 1 KG</h1>
+    <h1 class=" font-semibold lg:font-bold text-[11px] lg:text-[12px]">Onion 1KG</h1>
     <p>$39.99</p>
   </div>
   
@@ -318,11 +351,126 @@ font-family: "Poppins", serif;}
   <div class="my-auto">
   <div class="flex gap-2 my-auto">
     <div><i class="fa-solid fa-star text-orange-400"></i></div>
-    <div><h2 class="font-bold">4.5</h2></div>
+    <div class="my-auto"><h2 class="font-semibold text-[10px] lg:text-[13px] my-auto">4.3</h2></div>
   </div>
   
   <div>
-    <h1 class="font-bold lg:font-semibold ">Tomato 500 G</h1>
+    <h1 class="font-semibold lg:font-bold text-[11px] lg:text-[11px] ">Tomato 2kG</h1>
+    <p>$40.99</p>
+  </div>
+  
+  </div>
+  <!-- ----------------- -->
+  </div>
+
+
+  <div class="bg-white  p-2    rounded-lg flex gap-2 sm:gap-10 lg:gap-2 w-full  ">
+    <!-- ----------  -->
+  <!-- one  -->
+  <div class="my-auto">
+  <img class="bg-orange-50 rounded-lg my-auto" src="images/alu.png" alt="Onon">
+  </div>
+  <!-- Two  -->
+  <div class="my-auto">
+  <div class="flex gap-2 my-auto">
+    <div><i class="fa-solid fa-star text-orange-400"></i></div>
+    <div class="my-auto"><h2 class="font-semibold text-[10px] lg:text-[13px] my-auto">4.5</h2></div>
+  </div>
+  
+  <div>
+    <h1 class="font-semibold lg:font-bold text-[11px] lg:text-[12px] ">Potato 1KG</h1>
+    <p>$39.99</p>
+  </div>
+  
+  </div>
+  <!-- ----------------- -->
+  </div>
+
+
+  <div class="bg-white  p-2    rounded-lg flex gap-2 sm:gap-10 lg:gap-2 w-full  ">
+    <!-- ----------  -->
+  <!-- one  -->
+  <div class="my-auto">
+  <img class="bg-orange-50 rounded-lg my-auto" src="images/tom.png" alt="Onon">
+  </div>
+  <!-- Two  -->
+  <div class="my-auto">
+  <div class="flex gap-2 my-auto">
+    <div><i class="fa-solid fa-star text-orange-400"></i></div>
+    <div class="my-auto"><h2 class="font-semibold text-[10px] lg:text-[13px] my-auto">4.3</h2></div>
+  </div>
+  
+  <div>
+    <h1 class="font-semibold lg:font-bold text-[11px] lg:text-[12px]">Tomato 2KG</h1>
+    <p>$40.99</p>
+  </div>
+  
+  </div>
+  <!-- ----------------- -->
+  </div>
+
+
+  <div class="bg-white  p-2    rounded-lg flex gap-2 sm:gap-10 lg:gap-2 w-full  ">
+    <!-- ----------  -->
+  <!-- one  -->
+  <div class="my-auto">
+  <img class="bg-orange-50 rounded-lg my-auto" src="images/peaj.png" alt="Onon">
+  </div>
+  <!-- Two  -->
+  <div class="my-auto">
+  <div class="flex gap-2 my-auto">
+    <div><i class="fa-solid fa-star text-orange-400"></i></div>
+    <div class="my-auto"><h2 class="font-semibold text-[10px] lg:text-[13px] my-auto">4.5</h2></div>
+  </div>
+  
+  <div>
+    <h1 class="font-semibold lg:font-bold text-[11px] lg:text-[12px] ">Onion 1KG</h1>
+    <p>$39.99</p>
+  </div>
+  
+  </div>
+  <!-- ----------------- -->
+  </div>
+
+
+  <div class="bg-white  p-2    rounded-lg flex gap-2 sm:gap-10 lg:gap-2 w-full  ">
+    <!-- ----------  -->
+  <!-- one  -->
+  <div class="my-auto">
+  <img class="bg-orange-50 rounded-lg my-auto" src="images/tom.png" alt="Onon">
+  </div>
+  <!-- Two  -->
+  <div class="my-auto">
+  <div class="flex gap-2 my-auto">
+    <div><i class="fa-solid fa-star text-orange-400"></i></div>
+    <div class="my-auto"><h2 class="font-semibold text-[10px] lg:text-[13px] my-auto">4.3</h2></div>
+  </div>
+  
+  <div>
+    <h1 class="font-semibold lg:font-bold text-[11px] lg:text-[11px] ">Tomato 2kG</h1>
+    <p>$40.99</p>
+  </div>
+  
+  </div>
+  <!-- ----------------- -->
+  </div>
+
+
+  <div class="bg-white  p-2    rounded-lg flex gap-2 sm:gap-10 lg:gap-2 w-full  ">
+    <!-- ----------  -->
+  <!-- one  -->
+  <div class="my-auto">
+  <img class="bg-orange-50 rounded-lg my-auto" src="images/peaj.png" alt="Onon">
+  </div>
+  <!-- Two  -->
+  <div class="my-auto">
+  <div class="flex gap-2 my-auto">
+    <div><i class="fa-solid fa-star text-orange-400"></i></div>
+    <div class="my-auto"><h2 class="font-semibold text-[10px] lg:text-[13px] my-auto">4.5</h2></div>
+  </div> 
+  
+  <div>
+    <h1 class="font-semibold lg:font-bold text-[11px] lg:text-[12px] ">Onion 1KG</h1>
     <p>$39.99</p>
   </div>
   
@@ -341,126 +489,11 @@ font-family: "Poppins", serif;}
   <div class="my-auto">
   <div class="flex gap-2 my-auto">
     <div><i class="fa-solid fa-star text-orange-400"></i></div>
-    <div><h2 class="font-bold">4.5</h2></div>
+    <div class="my-auto"><h2 class="font-semibold text-[10px] lg:text-[13px] my-auto">4.5</h2></div>
   </div>
   
   <div>
-    <h1 class="font-bold lg:font-semibold ">Potato 1 KG</h1>
-    <p>$39.99</p>
-  </div>
-  
-  </div>
-  <!-- ----------------- -->
-  </div>
-
-
-  <div class="bg-white  p-2    rounded-lg flex gap-2 sm:gap-10 lg:gap-2 w-full  ">
-    <!-- ----------  -->
-  <!-- one  -->
-  <div class="my-auto">
-  <img class="bg-orange-50 rounded-lg my-auto" src="images/tom.png" alt="Onon">
-  </div>
-  <!-- Two  -->
-  <div class="my-auto">
-  <div class="flex gap-2 my-auto">
-    <div><i class="fa-solid fa-star text-orange-400"></i></div>
-    <div><h2 class="font-bold">4.5</h2></div>
-  </div>
-  
-  <div>
-    <h1 class="font-bold lg:font-semibold ">Tomato 500 G</h1>
-    <p>$39.99</p>
-  </div>
-  
-  </div>
-  <!-- ----------------- -->
-  </div>
-
-
-  <div class="bg-white  p-2    rounded-lg flex gap-2 sm:gap-10 lg:gap-2 w-full  ">
-    <!-- ----------  -->
-  <!-- one  -->
-  <div class="my-auto">
-  <img class="bg-orange-50 rounded-lg my-auto" src="images/peaj.png" alt="Onon">
-  </div>
-  <!-- Two  -->
-  <div class="my-auto">
-  <div class="flex gap-2 my-auto">
-    <div><i class="fa-solid fa-star text-orange-400"></i></div>
-    <div><h2 class="font-bold">4.5</h2></div>
-  </div>
-  
-  <div>
-    <h1 class="font-bold lg:font-semibold ">Onion 1 KG</h1>
-    <p>$39.99</p>
-  </div>
-  
-  </div>
-  <!-- ----------------- -->
-  </div>
-
-
-  <div class="bg-white  p-2    rounded-lg flex gap-2 sm:gap-10 lg:gap-2 w-full  ">
-    <!-- ----------  -->
-  <!-- one  -->
-  <div class="my-auto">
-  <img class="bg-orange-50 rounded-lg my-auto" src="images/tom.png" alt="Onon">
-  </div>
-  <!-- Two  -->
-  <div class="my-auto">
-  <div class="flex gap-2 my-auto">
-    <div><i class="fa-solid fa-star text-orange-400"></i></div>
-    <div><h2 class="font-bold">4.5</h2></div>
-  </div>
-  
-  <div>
-    <h1 class="font-bold lg:font-semibold ">Tomato 500 G</h1>
-    <p>$39.99</p>
-  </div>
-  
-  </div>
-  <!-- ----------------- -->
-  </div>
-
-
-  <div class="bg-white  p-2    rounded-lg flex gap-2 sm:gap-10 lg:gap-2 w-full  ">
-    <!-- ----------  -->
-  <!-- one  -->
-  <div class="my-auto">
-  <img class="bg-orange-50 rounded-lg my-auto" src="images/peaj.png" alt="Onon">
-  </div>
-  <!-- Two  -->
-  <div class="my-auto">
-  <div class="flex gap-2 my-auto">
-    <div><i class="fa-solid fa-star text-orange-400"></i></div>
-    <div><h2 class="font-bold">4.5</h2></div>
-  </div>
-  
-  <div>
-    <h1 class="font-bold lg:font-semibold ">Onion 1 KG</h1>
-    <p>$39.99</p>
-  </div>
-  
-  </div>
-  <!-- ----------------- -->
-  </div>
-
-
-  <div class="bg-white  p-2    rounded-lg flex gap-2 sm:gap-10 lg:gap-2 w-full  ">
-    <!-- ----------  -->
-  <!-- one  -->
-  <div class="my-auto">
-  <img class="bg-orange-50 rounded-lg my-auto" src="images/alu.png" alt="Onon">
-  </div>
-  <!-- Two  -->
-  <div class="my-auto">
-  <div class="flex gap-2 my-auto">
-    <div><i class="fa-solid fa-star text-orange-400"></i></div>
-    <div><h2 class="font-bold">4.5</h2></div>
-  </div>
-  
-  <div>
-    <h1 class="font-bold lg:font-semibold ">Potato 1 KG</h1>
+    <h1 class="font-semibold lg:font-bold text-[11px] lg:text-[12px] ">Potato 1KG</h1>
     <p>$39.99</p>
   </div>
   
@@ -480,11 +513,11 @@ font-family: "Poppins", serif;}
     <div class="my-auto">
     <div class="flex gap-2 my-auto">
       <div><i class="fa-solid fa-star text-orange-400"></i></div>
-      <div><h2 class="font-bold">4.5</h2></div>
+      <div class="my-auto"><h2 class="font-semibold text-[10px] lg:text-[13px] my-auto">4.5</h2></div>
     </div>
     
     <div>
-      <h1 class="font-bold lg:font-semibold ">Potato 1 KG</h1>
+      <h1 class="font-semibold lg:font-bold text-[11px] lg:text-[12px] ">Potato 1KG</h1>
       <p>$39.99</p>
     </div>
     
@@ -505,9 +538,9 @@ font-family: "Poppins", serif;}
 
 
 
+<!-- Arrival offer part  -->
 
-
-  <section class=" flex flex-col     lg:mb-16 mb-20    gap-10 mx-[5%] lg:mx-[10%] mt-24 ">
+  <section class=" flex flex-col     lg:mb-16 mb-20    gap-10 mx-[5%] lg:mx-[10%] mt-10 lg:mt-24 ">
 
     <!-- one  -->
     
@@ -591,7 +624,9 @@ font-family: "Poppins", serif;}
 </section>
 
 
-<section class="mx-[10%] mt-20 mb-20 ">
+
+<!-- client review part  -->
+<section class="mx-[10%] lg:mt-24 lg:mb-24  mt-10 mb-10">
 
   <div class=" flex justify-center mb-12">
   <h2 class="font-bold sm:text-3xl text-xl ">
@@ -601,7 +636,7 @@ font-family: "Poppins", serif;}
   
   
   
-  <div class=" grid md:grid-cols-3 gap-11">
+  <div class=" grid md:grid-cols-3 gap-5 lg:gap-11">
   
   
   <!-- one -->
@@ -696,6 +731,9 @@ font-family: "Poppins", serif;}
   </section>
 
 
+
+
+  <!-- get grocery news part  -->
 <section class="lg:-mt-[300px] gap-10 mx-[5%] lg:mx-[10%]  bg-orange-50 grid lg:grid-cols-2 px-10 py-5 rounded-3xl relative lg:top-[350px] top-[360px] -mt-[350px] ">
 
 
@@ -735,6 +773,10 @@ Get Grocery News!
 
 
 
+
+
+
+<!-- footer part  -->
 <footer class="bg-green">
 
 
@@ -784,6 +826,22 @@ Get Grocery News!
 
     
    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
